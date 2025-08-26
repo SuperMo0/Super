@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'SP Butch Lite';
+    src: url('SPButchLiteBold.woff2') format('woff2'),
+        url('SPButchLiteBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Super Kindly';
+    src: url('SuperKindly.woff2') format('woff2'),
+        url('SuperKindly.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
