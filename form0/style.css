@@ -9,6 +9,23 @@
     box-sizing: border-box;
 }
 
+.intro {
+    text-align: center;
+    box-shadow: 2px 1px 10px rgba(10, 10, 10, 0.492);
+}
+
+.intro img {
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+}
+
+.intro p {
+
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: aliceblue;
+}
 
 body {
     height: 100vh;
