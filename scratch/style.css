@@ -1,35 +1,74 @@
-input[type="checkbox"] {
-    appearance: none;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-input[type="checkbox"] {
-    position: relative;
-    width: 1em;
-    height: 1em;
-    border: 1px solid rgb(255, 0, 0);
-    /* Adjusts the position of the checkboxes on the text baseline */
-    vertical-align: -3px;
-    /* Set here so that Windows' High-Contrast Mode can override */
-    color: rgb(250, 225, 4);
+.grid {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 50px;
+    cursor: pointer;
+    font-size: 5rem;
+    text-align: center;
 }
 
-input[type="checkbox"]::before {
-    content: "✔";
+#c3,
+#c4,
+#c5 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#c1,
+#c4,
+#c7 {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
+}
+
+
+button {
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 0px;
+    width: 180px;
+    height: 40px;
+    background-color: rgb(0, 132, 255);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#get-names {
     position: absolute;
-    font-size: 1.3em;
-    right: -2px;
-    /* top: -0.2
-    em; */
-    visibility: hidden;
+    width: 500px;
+    height: 200px;
+    top: 20%;
+    left: 35%;
+    background-color: rgb(210, 223, 219);
 }
 
-input[type="checkbox"]:checked::before {
-    /* Use `visibility` instead of `display` to avoid recalculating layout */
-    visibility: visible;
+.hide {
+    display: none;
 }
 
-input[type="checkbox"]:disabled {
-    border-color: black;
-    background: #dddddd;
-    color: gray;
+#get-names {
+
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#submit-names {
+
+    grid-column: 1/-1;
+
+
 }
